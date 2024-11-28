@@ -14,3 +14,19 @@
 
 
 6. git commit -a -m "your_message" - to commit without adding your file to staging (skip staging)
+
+
+7. git diff - to compare changes done recently with last committed file (works on non staged changes)
+
+
+8. git diff --staged - To to compare changes done recently with last committed file (works on staged changes)
+
+
+9. git rm --cached filename.txt  - To remove the file that was committed by mistake (for example - credentials file)
+   
+   9(a) : After running above command we have to run "git commit -m "removed cred file" - this command so that changes are committed.
+
+
+10. git clone url_of_the_repo - To download the git repo to your system locally
+
+11. 
