@@ -26,7 +26,36 @@
    
    9(a) : After running above command we have to run "git commit -m "removed cred file" - this command so that changes are committed.
 
+PS: for command 8 and 9 an editor will open up in terminal to exit press 'q.
+
 
 10. git clone url_of_the_repo - To download the git repo to your system locally
 
-11. 
+11. ssh-keygen -o - this is used to generate ssh key in your system locally and you can use it to connect to your repo remotely without logging in multiple times.
+
+
+12. git remote add origin ssh-from-github-repository  - To make connection between local and remote repo
+
+13. git push -u branch_name - To push changes to remote git repository branch
+
+14. Git tag -a v1.0 -m "first release" - To tag the version with a message  (this is also called annotated tagging)
+    14(a) git tag - to check the version
+    14(b) git show v1.0 - This will give a description about this particular tag
+    14(c) git push v1.0 - this is to push tag (everytime we create a tag we have to push it separately)
+
+
+15. git checkout branchname -  this will switch to working directory to the mentioned branch 
+15(1). git checkout -b branchname - this will create the branch if it is not there and switch to that branch
+15(2). git branch - to check how many branches we have
+  
+16. git switch branchname - This is similar to command 15, in new versions switch is also used
+16(1). git checkout -c branchname - this will create the branch if it is not there and switch to that branch
+
+17. "git switch -" : This will be move to back to the previous branch.
+
+18. git branch -d branchname : This will delete the mentioned branch
+
+19. 
+
+
+
