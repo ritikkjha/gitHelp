@@ -1,0 +1,1 @@
+1. git config --global user.email "email@email.com"  - This command is used to login to your git account using command line/terminal
