@@ -55,7 +55,7 @@ PS: for command 8 and 9 an editor will open up in terminal to exit press 'q.
 
 18. git branch -d branchname : This will delete the mentioned branch
 
-19. 
+19.
 
 
 
