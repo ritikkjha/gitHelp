@@ -1,1 +1,128 @@
-PART 2 || COVERED IN CHAI CODE COHOT WITH BETTER UNDERSTANDING
+PART 2 || COVERED IN CHAI CODE COHORT WITH BETTER UNDERSTANDING
+
+
+***************Linux commands*****************
+
+ls -a   : This will view hidden file/folders as well.
+
+pwd : present working directory
+
+cat filename : will read content of file
+
+
+
+***********Git Commands******************
+
+
+git init - initializes the project  | creates a .git named hidden folder
+
+
+git add filename  : to track the file  | adds file for index folder inside .git folder
+
+
+git add .  : this will track all the files at once. means to put file in staging area
+
+
+git status : will show list of tracked and untracked files means the list of files that are in staging and not in staging
+
+
+git commit -m "message"  :  This creates a checkpoint, basically a snapshot of changes done so far
+
+  ********   Notes: Every commit has an ID or Hash. ******* 
+
+
+git log : will give me commit log with details like commit hash, author ad commit date time
+
+
+git log --oneline : will show commit log in one line . NO MESS WHATSOEVER
+
+
+git diff :  after you've done any change in any file, you can run this command to check what all changes were done.
+
+
+
+$$$$$$$$$$$$$$####### GIT TRACK KAISE KARTA HAI ######$$$$$$$$$$$$$$$$$$
+
+
+When we commit, what happen behind the scene 
+
+Inside '.git' folder there is 'object' folder and inside this folder there are multiple folders
+
+Folder names are first two characters of commit hash done so far.
+
+now, inside this folder there is file, name of this file is rest of the commit hash.
+
+we use "cat" command to check contents of this file ie -  cat filename
+
+but it result in gibberish content 
+
+we have to cat using git like this :        git cat-file -p fullcommithash
+
+
+Use this command to check type of file :    git cat-file -t fullcommithash      | for example a file can be of commit type.
+
+similarly if we use '-S' it will show size of content 
+
+
+$$$$$$###### COMMIT HASH KAISE BANTA HAI ? #######$$$$$$$$$$
+
+Reads code file -> Hash using SHA1 -> Results in COMMIT HASH 
+
+
+Which is why if you don't change anything in file and still try to commit it will not create a new hash.
+
+
+$$$$$####### ????????????????????????????? #######$$$$$$$$$$
+
+We can git log see all the commit logs
+
+Now, we can also go back to an older commit 
+
+Let's say git log command gives us these 3 commits
+7a3k3hb3  (HEAD -> main)        | This is most recent commit  (head is here)
+5esb3bj3 
+8rw3b3b2
+
+If I want to go back to 8rw3b3b2 I can use following command
+
+git reset 8rw3b3b2   -> this command will move me back to mentioned commit hash, basically move the head to older commit.
+
+but what will happen to previous 2 commits??????????????????????????
+
+They will become changes - you can check that using git status.
+
+If I want to permanently remove these commits I can run below command
+
+git reset --hard 8rw3b3b2  : this command will remove all the other commits we'll be back to where we were before the above 2 commits.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
