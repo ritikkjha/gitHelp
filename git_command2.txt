@@ -96,7 +96,7 @@ If I want to permanently remove these commits I can run below command
 git reset --hard 8rw3b3b2  : this command will remove all the other commits we'll be back to where we were before the above 2 commits.
 
 
-
+**********************************************************************
 
 
 
