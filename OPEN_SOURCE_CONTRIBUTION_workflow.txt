@@ -1,0 +1,21 @@
+##########**************OPEN SOURCE CONTRIBUTION WORKFLOW*************###############
+
+1. Find the project repository you want to work on.
+2. Fork the repository  : it will clone the repo in your GitHub account.
+
+3. take the url and close it in your local machine
+
+4. open the project in VS code (or any editor)
+5. Make changes
+
+6. git add .
+6. git commit -m "message"
+6. git commit -am "commit message"
+
+7. goto GitHub now, you'll see a message "compare & pull request"
+8. create a pull-request
+
+9. wait for the admin to approve you PR.
+
+
+10. YUHOOOOOOOO you did contribution to project (opensource)
