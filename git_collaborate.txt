@@ -1,3 +1,142 @@
 GITHUB IS THE CENTRAL SYSTEM WHERE DEVELOPERS PUSH/PULL CODE AND COLLABORATE FOR EFFICIENT SOFTWARE DEVELOPMENT
 
 
+push local repo to GitHub repo
+
+1. git remote add origin url_of_git_repo_where_you_want_to_push
+
+2. git remote -v    | Try it
+
+3. git push -u origin main    - this command to be run only first time
+
+     Explaination: 
+         -u  means upstream 
+          origin main is branch
+
+
+4. GIT BRANCHING  : We can create multiple branches in git and each developer working on a project can commit simultaneously without affecting main code.
+
+
+Command :
+
+a) Git branch new_branch_name    : create new branch
+b) git checkout branch_name  : move to new branch
+
+
+We can do above 2 commands in one line. 
+
+git checkout -b branchname   : This command will create a new branch and checkout to that new branch simultaneously
+
+
+
+/////////////////////    
+
+now, work on this new branch , it will take last commit from where the branch was created.
+
+once we make our changes in code/file 
+
+do -> git add .
+&  -> git commit -m "message"
+
+We will be able to see new commit added to this branch (using - git log)  but not added to the main branch
+
+to add these changes to main branch we have to merge, using below command
+
+/////////////////////
+
+
+
+c) first git checkout to main branch and run following command"
+
+git merge branchname  (this "brnchname is the one you worked on )
+
+
+%%%%%%%%%%%%%%%%%%
+
+d) when we merge all the "commits" in the brach are merged seperately which creates a long history in git. To avoid the long messy history
+   in git I can squash merge a branch and it will combine all the commits in one and merge it to main branch as a single commit
+
+command :   git merge --squash branchName   (you should checkout to main branch before merge)
+
+BUT SQUASH IN NOT USED UNLESS EXPLICITLY DECIDED BY ANY ORAGANIZATION   (drawback: we loose history, using simple merge we can revert sub-commits instead of reverting entire commit)
+
+
+I can squash in main but not delete the branch.  (hybrid approach)
+
+%%%%%%%%%%%%%%%%%%
+
+//\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\\
+
+
+REBASE
+
+Let's understand when is REBASE used in git :
+
+Situation: 
+
+When developers are working on a branch, it is highly likely that main branch gets a lot ahead because other developers are also working
+and they keep on committing and merging and main branch has a lot changes already done.
+
+now for the developers who not in sync with current main branch it important that their working branch it updated with most recent changes done in main.
+
+This is where REBASE comes in picture
+
+Command : 
+
+checkout to your own working branch
+
+git rebase main    : this command will make sure your branch in sync with main branch
+
+***************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

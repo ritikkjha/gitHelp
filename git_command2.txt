@@ -28,7 +28,19 @@ git status : will show list of tracked and untracked files means the list of fil
 
 git commit -m "message"  :  This creates a checkpoint, basically a snapshot of changes done so far
 
-  ********   Notes: Every commit has an ID or Hash. ******* 
+
+################# ------==================------------ ###################### 
+
+Everytime we make changes we have to do git add . and git commit -m "message"
+
+let's do it in one command  (git add and commit in one command )
+
+
+git commit -am "commit message"    this command adds changes to staging 
+
+
+ 
+@@@@@@@@@@********   Notes: Every commit has an ID or Hash. *******@@@@@@@@@
 
 
 git log : will give me commit log with details like commit hash, author ad commit date time
